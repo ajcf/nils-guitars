@@ -1,41 +1,119 @@
 <!DOCTYPE: html>
 <head>
+	<link type="text/css" rel="stylesheet" href="../css/bootstrap.superhero.css"/>
 	<link type="text/css" rel="stylesheet" href="../css/style.css"/>
+	<script language="javscript" src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script language="javscript" src="../js/bootstrap.min.js" type="text/javascript"></script>
 	<title>Nils Guitars and Mandolins</title>
 </head>
 <body>
-	<div id="header">
-		<img src="../images/header.jpg"</img>
-	</div>		
-	<ul id="navbar">
-		<li>
-			<a href="index.html">
-				Home
-			</a>
-		</li>
-		<li>
-			<a href="about.html">
-				About
-			</a>
-		</li>
-		<li>
-			<a href="instruments.html">
-				Instruments
-			</a>
-		</li>
-		<li>	
-			<a href="ordering_information.html">
-				Ordering/Information
-			</a>
-		</li>	
-		<li>
-			<a href="contact.html">
-				Contact
-			</a>	
-		</li>
-	</ul>
+	<div class="container">
+		<div class="page-header">
+			<img class="img-responsive" src="../images/header.jpg"</img>
+		</div>
+	</div>
+	<div class="container">
+		<div class="navbar navbar-default">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse navbar-responsive-collapse">
+				<ul class="nav navbar-nav" style="margin-left: 25%;">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li class="active">
+						<a href="#">Instruments</a>
+					</li>
+					<li>
+						<a href="ordering_information.html">Ordering/Information</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
-	<hr width="80%">
+	<div class="col-sm-12">
+		<div class="col-sm-2 sidebar-left friendly">
+			<ul class="nav nav-stacked nav-pills">
+				<li class="active">
+					<a href='#'>Grand Auditorium</a>
+				</li>
+				<li>
+					<a href='#'>Grand Concert II</a>
+				</li>
+				<li>
+					<a href='#'>Grand Concert</a>
+				</li>
+				<li>
+					<a href='#'>Parlor</a>
+				</li>
+			</ul>
+		</div>
+		<div class="col-sm-10 friendly">
+			<h2>
+				Grand Auditorium
+			</h2>
+			<div class="col-sm-5 friendly">
+				<p>
+					This guitar is designed be capable of producing the clearest and loudest tone possible. Voiced to be bold and cut through, this model is excellent for creating strong rhythm strumming patterns and clean, powerful leads.
+				</p>
+				Specifications
+				<ul>
 
+					<li>
+						Depth at heel: 3 <sup>21</sup>/<sub>32</sub>"
+					</li>
+					<li>
+						Depth at end block: 4 <sup>5</sup>/<sub>32</sub>"
+					</li>
+					<li>
+						Shoulders: 11 <sup>3</sup>/<sub>16</sub>"
+					</li>
+					<li>
+						Waist : 9 <sup>1</sup>/<sub>8</sub>"
+					</li>
+					<li>
+						Hips: 15 <sup>1</sup>/<sub>8</sub>"
+					</li>
+					<li>
+						Sound hole: 3 <sup>7</sup>/<sub>8</sub>"
+					</li>
+					<li>
+						Body Length: 18 <sup>3</sup>/<sub>4</sub>"
+					</li>
+				</ul>
+				All <a href="standard_options.html">standard options</a> available.
+				<div class="row" style="margin-top: 20px;">
+					<div class="col-xs-6 col-md-3">
+						<span class="thumbnail" style="cursor: pointer;">
+							<img onclick="$('#auditorium-hero').attr('src', this.src);" data-src="holder.js/100%x180" src="../images/instruments/guitars/auditorium/front-small.jpg"/>
+							</span>
+					</div>
+					<div class="col-xs-6 col-md-3">
+						<span class="thumbnail" style="cursor: pointer;">
+							<img  onclick="$('#auditorium-hero').attr('src', this.src);" data-src="holder.js/100%x180"src="../images/instruments/guitars/auditorium/back-small.jpg"/>
+							</span>
+					</div>
+				</div> 
+			</div>
 
+			<div class="col-sm-5 friendly">
+			<div class="row">
+					<img class="img-responsive  well well-sm" id="auditorium-hero" src="../images/instruments/guitars/auditorium/front-small.jpg" style="max-height: 500px"/>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+		</div>
 </body>

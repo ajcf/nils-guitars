@@ -1,0 +1,13 @@
+#bottom {
+	text-align: center;
+	font-size: .8em;
+ }
+
+.sidebar-left {
+	max-width: 180px;
+	/*border-right: solid 1px #4e5d6c;*/
+}
+
+.friendly {
+	display: inline-block;
+}
