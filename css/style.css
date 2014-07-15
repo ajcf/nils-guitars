@@ -11,3 +11,17 @@
 .friendly {
 	display: inline-block;
 }
+
+#concert2, #concert1, #parlor {
+	display: none;
+}
+
+#background-overlay {
+	background-color: darkgray;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: .5;
+}
