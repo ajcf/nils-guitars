@@ -17,3 +17,17 @@ var closeLightbox = function()
 {
 	$('#lightbox').modal('hide');
 }
+
+var switchLightbox = function(imageId)
+{
+	var source = $('#'+imageId)[0].src;
+	if(source.indexOf("back") > 1)
+	{
+		source = source.replace('back', 'front');
+	}
+	else
+	{
+		source = source.replace('front', 'back');
+	}	
+	$('#' + imageId).attr('src', source);
+}

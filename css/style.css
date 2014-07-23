@@ -16,6 +16,10 @@
 	display: none;
 }
 
+#guitar-sidenav {
+	min-width: 100px;
+}
+
 #background-overlay {
 	background-color: darkgray;
 	position: fixed;
@@ -24,4 +28,8 @@
 	top: 0;
 	left: 0;
 	opacity: .5;
+}
+
+#home-jumbotron {
+	max-width: 800px;
 }

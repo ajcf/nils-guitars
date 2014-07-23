@@ -22,15 +22,22 @@
 				</button>
 			</div>
 			<div class="navbar-collapse collapse navbar-responsive-collapse">
-				<ul class="nav navbar-nav">
+				<ul class="nav navbar-nav" style="margin-left: 25%;">
 					<li class="active">
 						<a href="#">Home</a>
 					</li>
 					<li>
 						<a href="about.html">About</a>
 					</li>
-					<li>
-						<a href="instruments.html">Instruments</a>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown">Instruments <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="guitars.html">Guitars</a>
+								<a href="mandolins.html">Mandolins</a>
+								<a href="ukuleles.html">Ukuleles</a>
+							</li>
+						</ul>
 					</li>
 					<li>
 						<a href="ordering_information.html">Ordering/Information</a>
@@ -42,7 +49,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="jumbotron container">
+	<div class="jumbotron container" id="home-jumbotron">
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
 			<ol class="carousel-indicators">
@@ -50,40 +57,61 @@
 				<li data-target="#myCarousel" data-slide-to="1" class=""></li>
 				<li data-target="#myCarousel" data-slide-to="2" class=""></li>
 				<li data-target="#myCarousel" data-slide-to="3" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="4" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="5" class=""></li>
+				<li data-target="#myCarousel" data-slide-to="6" class=""></li>
 			</ol>
 			<div class="carousel-inner">
 				<div class="item active">
 					<img src="../images/carousel/mando-head.jpg" alt="First slide">
 					<div class="container">
 						<div class="carousel-caption">
-							<h1>Lovely Mandolin</h1>
 						</div>
 					</div>
 				</div>
 				<div class="item">
-					<img src="../images/carousel/030.jpg" alt="Second slide">
+					<img src="../images/carousel/head2.jpg" alt="Second slide">
 					<div class="container">
 						<div class="carousel-caption">
-							<h1>Another lovely instrument.</h1>
 						</div>
 					</div>
 				</div>
 				<div class="item">
-					<img src="../images/carousel/Nils_11514_shop_132.jpg" alt="Third slide">
+					<img src="../images/carousel/soundboard.jpg" alt="Third slide">
 					<div class="container">
-						<div class="carousel-caption">
-							<h1>Candid shot!</h1>
+						<div class="carousel-caption">	
 						</div>
 					</div>
 				</div>
 				<div class="item">
-					<img src="../images/carousel/018.jpg" alt="Third slide">
+					<img src="../images/carousel/bridge2.jpg" alt="Fourth slide">
 					<div class="container">
 						<div class="carousel-caption">
-							<h1>Some fine craftsmanship right here</h1>
 						</div>
 					</div>
 				</div>
+				<div class="item">
+					<img src="../images/carousel/mandolin.jpg" alt="Fifth slide">
+					<div class="container">
+						<div class="carousel-caption">
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="../images/carousel/neckblock.jpg" alt="Sixth slide">
+					<div class="container">
+						<div class="carousel-caption">
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<img src="../images/carousel/body.jpg" alt="Seventh slide">
+					<div class="container">
+						<div class="carousel-caption">
+						</div>
+					</div>
+				</div>
+			
 			</div>
 			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
 			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
