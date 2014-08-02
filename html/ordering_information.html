@@ -1,41 +1,70 @@
 <!DOCTYPE: html>
 <head>
+	<link type="text/css" rel="stylesheet" href="../css/bootstrap.superhero.css"/>
 	<link type="text/css" rel="stylesheet" href="../css/style.css"/>
+	<script language="javscript" src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
+	<script language="javscript" src="../js/bootstrap.min.js" type="text/javascript"></script>
 	<title>Nils Guitars and Mandolins</title>
 </head>
 <body>
-	<div id="header">
-		<img src="../images/header.jpg"</img>
-	</div>		
-	<ul id="navbar">
-		<li>
-			<a href="index.html">
-				Home
-			</a>
-		</li>
-		<li>
-			<a href="about.html">
-				About
-			</a>
-		</li>
-		<li>
-			<a href="instruments.html">
-				Instruments
-			</a>
-		</li>
-		<li>	
-			<a href="ordering_information.html">
-				Ordering/Information
-			</a>
-		</li>	
-		<li>
-			<a href="contact.html">
-				Contact
-			</a>	
-		</li>
-	</ul>
-
-	<hr width="80%">
-
+	<div class="container">
+		<div class="page-header">
+			<img class="img-responsive" src="../images/header.jpg"</img>
+		</div>
+	</div>
+	<div class="container">
+		<div class="navbar navbar-default">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="navbar-collapse collapse navbar-responsive-collapse">
+				<ul class="nav navbar-nav" style="margin-left: 25%;">
+					<li>
+						<a href="index.html">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown">Instruments <span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li>
+								<a href="instruments/auditorium.html">Guitars</a>
+								<a href="instruments/mandolins.html">Mandolins</a>
+								<a href="instruments/ukuleles.html">Ukuleles</a>
+							</li>
+						</ul>
+					</li>
+					<li class="dropdown" class="active">
+						<a class="dropdown-toggle" data-toggle="dropdown">Ordering/Information<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">Ordering</a>
+									<a href="Information.html">Information</a>
+								</li>
+							</ul>	
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="titles">
+		<p>Check back soon!</p>		
+	</div>	
+	<footer>
+		<hr class="container">
+		    <div id="bottom">
+		        <a href="https://www.facebook.com/pages/Nils-Guitars-and-Mandolins/139990936088920"><img src="../images/facebook-button.gif"></a>
+		        	<p>Nils Guitars and Mandolins</p>
+		            <p>Copyright 2014. All Rights Reserved. </p>
+			</div>
+    </footer>	
 
 </body>
