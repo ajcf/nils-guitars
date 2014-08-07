@@ -66,7 +66,7 @@ var switchLightbox = function(imageId)
 
 var lightboxChange = function(instrument, step)
 {
-	var srcStart = "../../images/instruments/";
+	var srcStart = "../images/instruments/";
 	var images;
 	switch(instrument)
 	{
@@ -108,6 +108,10 @@ var lightboxChange = function(instrument, step)
 	{
 		newIndex = 0;
 	}
+	console.log("new index is " + newIndex);
+	console.log("length is " + images.length);
+	console.log("new image source is " + images[newIndex]);
 	var srcString = srcStart + images[newIndex];
 	$('#modal-image').attr('src', srcString);
+	console.log($('#modal-iimage'));
 }
