@@ -36,3 +36,86 @@
 .updatelist {
 	list-style: none;
 }
+.speclist {
+	list-style: none;
+}
+#featuredcimg {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.orderingoptionslist {
+	list-style: none;
+	float: left;
+	border-radius: 5px;
+}
+#bodypics {
+	padding-right: 20px;
+}
+#orderingcontainer {
+	width: 100%;
+	margin: 0;
+}	
+#buildsummary {
+	border: 1px solid #c0c0c0;
+	border-radius: 5px;
+	margin-left: 5%;
+	margin-bottom: 3%;
+}
+#choosebodystyle {
+	cellpadding: 20px 20px 20px 80px;
+	border-radius: 5px;
+}
+.bodythumbs {
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#cutaway {
+	padding-right:5%;
+}
+.splits {
+	border-bottom: 1px solid #c0c0c0;
+}
+
+#contactlist{ 
+	list-style: none;
+	}
+
+.bs-wizard {margin-top: 40px;}
+
+/*Form Wizard*/
+.bs-wizard {border-bottom: solid 1px #e0e0e0; padding: 0 0 10px 0;}
+.bs-wizard > .bs-wizard-step {padding: 0; position: relative;}
+.bs-wizard > .bs-wizard-step + .bs-wizard-step {}
+.bs-wizard > .bs-wizard-step .bs-wizard-stepnum {color: #4e5d6c; font-size: 16px; margin-bottom: 5px;}
+.bs-wizard > .bs-wizard-step .bs-wizard-stepnum-enabled {color: #ffffff; font-size: 16px; margin-bottom: 5px;}
+.bs-wizard > .bs-wizard-step .bs-wizard-info {color: #ffffff; font-size: 14px;}
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot {position: absolute; width: 30px; height: 30px; display: block; background: #5bc0de; top: 45px; left: 50%; margin-top: -15px; margin-left: -15px; border-radius: 50%;} 
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {content: ' '; width: 14px; height: 14px; background: #ffffff; border-radius: 50px; position: absolute; top: 8px; left: 8px; } 
+.bs-wizard > .bs-wizard-step > .progress {position: relative; border-radius: 0px; height: 8px; box-shadow: none; margin: 20px 0;}
+.bs-wizard > .bs-wizard-step > .progress > .progress-bar {width:0px; box-shadow: none; background: #5bc0de;}
+.bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {width:100%;}
+.bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {width:50%;}
+.bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar {width:0%;}
+.bs-wizard > .bs-wizard-step:last-child.active > .progress > .progress-bar {width: 100%;}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {background-color: #f5f5f5;}
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {opacity: 0;}
+.bs-wizard > .bs-wizard-step:first-child  > .progress {left: 50%; width: 50%;}
+.bs-wizard > .bs-wizard-step:last-child  > .progress {width: 50%;}
+.bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot{ pointer-events: none; }
+/*END Form Wizard*/
+
+#termsandconditions {
+	margin-left: 10%;
+	margin-right:10%;
+}
+#termsandconditionscheckbox {
+	margin-top: 2%;
+}
+
+.pagerspacer {
+	margin-top:2%;
+}
+#gotit {
+	padding-left: 4%;
+}
