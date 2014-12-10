@@ -1,3 +1,4 @@
+
 #bottom {
 	text-align: center;
 	font-size: .8em;
@@ -11,6 +12,8 @@
 
 .friendly {
 	display: inline-block;
+}
+
 }
 
 #concert2, #concert1, #parlor {
@@ -59,7 +62,6 @@
 #buildsummary {
 	border: 1px solid #c0c0c0;
 	border-radius: 5px;
-	margin-left: 5%;
 	margin-bottom: 3%;
 }
 #choosebodystyle {
@@ -118,4 +120,8 @@
 }
 #gotit {
 	padding-left: 4%;
+}
+.container
+{
+    min-width: 769px !important;
 }

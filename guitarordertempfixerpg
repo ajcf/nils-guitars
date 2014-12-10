@@ -67,42 +67,147 @@
 		</p>	
 		<hr>
 	</div>
-	<div class="container">		
-		<div class="row">
-			<div class="col-sm-6">	
-				<div class="well bs-component">
-					<form class="form-horizontal">
-						<fieldset>
-							<legend>Contact Information</legend>
-							<div class="form-group">
-								<label for="inputName" class="col-lg-2 control-label">Name</label>
-								<div class="col-lg-10">
-									<input type="text" class="form-control" id="inputName" placeholder="Name">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="inputAddress" class="col-lg-2 control-label">Address</label>
-								<div class="col-lg-10">
-									<input type="address" class="form-control" id="inputAdress" placeholder="Street">
-									<input type="address" class="form-control" id="inputAdress" placeholder="City, State, Zip">
-									<input type="address" class="form-control" id="inputAdress" placeholder="Country">
-								</div>
-							</div>
-							<div class="form-group">
-								<label for="inputName" class="col-lg-2 control-label">Phone Number</label>
-								<div class="col-lg-10">
-									<input type="text" class="form-control" id="inputPhone" placeholder="Telephone Number">
-								</div>
-							</div> 
-							<div class="form-group">
-								<label for="inputName" class="col-lg-2 control-label">Email</label>
-								<div class="col-lg-10">
-									<input type="text" class="form-control" id="inputEmail" placeholder="Email Address">
-								</div>
-							</div>
-						</fieldset>
-					</form>	
-				</div>
+	<div class="container">
+		<div class="col-sm-10" id="orderingcontainer">
+			<div class="row">
+				<div class="col-sm-5">
+					<div class="row">
+						<div>
+							<h4>Choose Body Style</h4>
+							<ul class="orderingoptionslist well">
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Grand Auditorium
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Grand Concert
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Concert
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Parlor
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Other
+										<input class="form-control input-sm" type="text" id="inputSmall">
+									</label>
+								</li>
+							</ul>
+						</div>		
+						<div class="col-sm-5">
+							<h4>Choose Top</h4>	
+							<ul class="orderingoptionslist well">
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Sitka Spruce
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Adirondack Spruce
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Mahogany    
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Black Walnut
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Hawaiian Koa
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Other
+										<input class="form-control input-sm" type="text" id="inputSmall">
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="row">	
+						<div class="col-sm-5">
+							<h4>Choose Back and Sides</h4>
+							<ul class="orderingoptionslist well">
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Mahogany
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Sapele
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Black Walnut    
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Red Maple
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Indian Rosewood
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										European Maple
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Hawaiian Koa
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Other
+										<input class="form-control input-sm" type="text" id="inputSmall">
+									</label>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>	
 			</div>
 			<div class="col-sm-4" id="buildsummary">
 				<div class="row">	
@@ -111,13 +216,13 @@
 					</h3>	
 					<ol class="orderingoptionslist">
 						<li>
-							Body Style: Grand Concert
+							Body Style:
 						</li>	
 						<li>
-							Top: Adirondack Spruce
+							Top:
 						</li>	
 						<li>
-							Back and Sides: Red Maple
+							Back and Sides:
 						</li>
 						<li>
 							Fingerboard/Bridge:
@@ -163,58 +268,59 @@
 					</h4>
 				</div>					
 			</div>
-		</div>		
+		</div>			
 		<div class="titles">
 			<ul class="pager">
-				<li><a href="guitarorderpg4.html">Previous</a></li>
-				<li><a href="guitarorderpg6.html">Next</a></li>
+				<li class="disabled"><a href="#">Previous</a></li>
+				<li><a href="guitarorderpg2.html">Next</a></li>
 			</ul>
 		</div>
-	<hr>
+		<hr>
 		<div class="row bs-wizard" style="border-bottom:0;">
 
-			<div class="col-xs-2 bs-wizard-step complete">
-				<div class="text-center bs-wizard-stepnum">Step 1</div>
+			<div class="col-xs-2 bs-wizard-step active">
+				<div class="text-center bs-wizard-stepnum-enabled">Step 1</div>
 				<div class="progress"><div class="progress-bar"></div></div>
-				<a href="guitarorderpg.html" class="bs-wizard-dot"></a>
+				<a href="#" class="bs-wizard-dot"></a>
 				<div class="bs-wizard-info text-center">Body Style and Basic Woods</div>
 			</div>
 
-			<div class="col-xs-2 bs-wizard-step complete">
+			<div class="col-xs-2 bs-wizard-step disabled">
 				<div class="text-center bs-wizard-stepnum">Step 2</div>
 				<div class="progress"><div class="progress-bar"></div></div>
-				<a href="guitarorderpg2.html" class="bs-wizard-dot"></a>
+				<a href="#" class="bs-wizard-dot"></a>
 				<div class="bs-wizard-info text-center">Neck, Binding, Rosettes And Finish</div>
 			</div>
 
-			<div class="col-xs-2 bs-wizard-step complete">
+			<div class="col-xs-2 bs-wizard-step disabled">
 				<div class="text-center bs-wizard-stepnum">Step 3</div>
 				<div class="progress"><div class="progress-bar"></div></div>
-				<a href="guitarorderpg3.html" class="bs-wizard-dot"></a>
+				<a href="#" class="bs-wizard-dot"></a>
 				<div class="bs-wizard-info text-center">String Spacing, Scale Length, Electronics and Frets</div>
 			</div>
 
-			<div class="col-xs-2 bs-wizard-step complete">
+			<div class="col-xs-2 bs-wizard-step disabled">
 				<div class="text-center bs-wizard-stepnum">Step 4</div>
 				<div class="progress"><div class="progress-bar"></div></div>
-				<a href="guitarorderpg4.html" class="bs-wizard-dot"></a>
+				<a href="#" class="bs-wizard-dot"></a>
 				<div class="bs-wizard-info text-center"> Customizations, Details, Sound, Special Requets and Anything Else  </div>
 			</div>
 
-			<div class="col-xs-2 bs-wizard-step active">
-				<div class="text-center bs-wizard-stepnum-enabled">Step 5</div>
+			<div class="col-xs-2 bs-wizard-step disabled">
+				<div class="text-center bs-wizard-stepnum">5</div>
 				<div class="progress"><div class="progress-bar"></div></div>
 				<a href="#" class="bs-wizard-dot"></a>
 				<div class="bs-wizard-info text-center">Contact Information</div>
 			</div>
 
 			<div class="col-xs-2 bs-wizard-step disabled">
-				<div class="text-center bs-wizard-stepnum">Step 6</div>
+				<div class="text-center bs-wizard-stepnum">6</div>
 				<div class="progress"><div class="progress-bar"></div></div>
 				<a href="#" class="bs-wizard-dot"></a>
 				<div class="bs-wizard-info text-center">Overview.</div>
 			</div>
-		</div>	
+		</div>
+	</div>	
 	<footer>
 		<hr class="container">
 		<div id="bottom">
