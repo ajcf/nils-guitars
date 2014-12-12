@@ -20,7 +20,9 @@ var concertii_images = [
 ]
 var concert_images = [
 	"guitars/concert/lightbox/1front.jpg",
-	"guitars/concert/lightbox/1back.jpg"
+	"guitars/concert/lightbox/1back.jpg",
+	"guitars/concert/lightbox/redmapleconcertfront.jpg",
+	"guitars/concert/lightbox/redmapleconcertback.jpg"
 ]
 var parlor_images = [
 	"guitars/parlor/lightbox/1front.jpg",

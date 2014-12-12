@@ -59,23 +59,24 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="col-sm-12">
-			<div class="col-sm-2 sidebar-left friendly">
+	
+	<div class="container">	
+		<div class="row">
+			<div class="col-xs-2 sidebar-left friendly">
 				<ul class="nav nav-stacked nav-pills" id="guitar-sidenav">
 					<li>
 						Guitars
 						<ul class="nav nav-stacked nav-pills" style="margin-left: 10px;">
-							<li id="auditorium-link">
+							<li>
 								<a href="auditorium.html">Grand Auditorium</a>
 							</li>
 							<li class="active">
-								<a href='#'>Grand Concert</a>
+								<a href="#">Grand Concert</a>
 							</li>
 							<li>
 								<a href='concert.html'>Concert</a>
 							</li>
-							<li id=>
+							<li>
 								<a href='parlor.html'>Parlor</a>
 							</li>
 						</ul>
@@ -88,11 +89,13 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col-sm-10 friendly guitars">
-					<h2>
-						Grand Concert
-					</h2>
-					<div class="col-sm-5 friendly">
+			
+			<div class="col-xs-10 friendly">
+				<h2>
+					Grand Concert
+				</h2>
+				<div class="row">
+					<div class="col-xs-5 friendly">
 						<p>
 							Based off of its slightly smaller counterpart, this guitar also produces a full range of sound with excellent dynamics and response. The difference is that that this model's features better suit it to be voiced for players seeking a guitar that excels with aggressive finger-style playing or for players who want a versatile guitar that does well with finger-style and flat-picking. The slightly longer and wider lower bout allow for a top the can be driven harder, while still maintaining a full sound spectrum.
 						</p>
@@ -121,29 +124,26 @@
 								Body Length: 19"
 							</li>
 						</ul>
-						All <a href="../standard_options.html">standard options</a> available.
-						<div class="row" style="margin-top: 20px;">
-							<div class="col-xs-6 col-md-3">
-								<span class="thumbnail" style="cursor: pointer;">
-									<img onclick="$('#concert2-hero').attr('src', this.src);" data-src="holder.js/100%x180" src="../images/instruments/guitars/concert/2front.jpg"/>
-								</span>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<span class="thumbnail" style="cursor: pointer;">
-									<img  onclick="$('#concert2-hero').attr('src', this.src);" data-src="holder.js/100%x180"src="../images/instruments/guitars/concert/2back.jpg"/>
-								</span>
-							</div>
-						</div> 
+						<p>
+							All <a href="../information.html">standard options</a> available.
+						</p>
+						<div>
+							<hr>
+							<h5>
+								Black Walnut Back/Sides, Spruce Top
+							</h5>
+							<img class="friendly img-responsive well well-sm thumbnail-special" onclick="$('#auditorium-hero').attr('src', this.src);" data-src="holder.js/100%x180" src="../images/instruments/guitars/concert/2front.jpg"/>
+							<img  class="friendly img-responsive well well-sm thumbnail-special" onclick="$('#auditorium-hero').attr('src', this.src);" data-src="holder.js/100%x180"src="../images/instruments/guitars/concert/2back.jpg"/>
+						</div>	
 					</div>
-
-					<div class="col-sm-5 friendly">
-						<div class="row">
-							<img class="img-responsive  well well-sm" id="concert2-hero" src="../images/instruments/guitars/concert/2front.jpg"  onclick="openLightbox(this);" style="max-height: 500px"/>
-						</div>
-
-
-					</div>
-				</div>	
+					<div class="col-xs-5 friendly">
+						<img class="img-responsive  well well-sm thumbnail-special" id="auditorium-hero" src="../images/instruments/guitars/concert/2front.jpg"  onclick="openLightbox(this);" style="max-height: 500px"/>
+					</div>	
+				</div>
+			</div>	
+		</div>
+		
+	</div>
 	<div id="background-overlay" style="display: none" onclick="closeLightbox()">
 	</div>
 	<div class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="lightbox">
@@ -165,13 +165,13 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>	
 	<footer>
 		<hr class="container">
-		    <div id="bottom">
-		        <a href="https://www.facebook.com/pages/Nils-Guitars-and-Mandolins/139990936088920"><img src="../images/facebook-button.gif"></a>
-		        	<p>Nils Guitars and Mandolins</p>
-		            <p>Copyright 2014. All Rights Reserved. </p>
-			</div>
-    </footer>	
+		<div id="bottom">
+			<a href="https://www.facebook.com/pages/Nils-Guitars-and-Mandolins/139990936088920"><img src="../images/facebook-button.gif"></a>
+			<p>Nils Guitars and Mandolins</p>
+			<p>Copyright 2014. All Rights Reserved. </p>
+		</div>
+	</footer>	
 </body>

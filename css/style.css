@@ -14,11 +14,6 @@
 	display: inline-block;
 }
 
-}
-
-#concert2, #concert1, #parlor {
-	display: none;
-}
 
 #guitar-sidenav {
 	min-width: 100px;
@@ -120,8 +115,4 @@
 }
 #gotit {
 	padding-left: 4%;
-}
-.container
-{
-    min-width: 769px !important;
 }

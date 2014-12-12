@@ -59,21 +59,22 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<div class="col-sm-12">
-			<div class="col-sm-2 sidebar-left friendly">
+	
+	<div class="container">	
+		<div class="row">
+			<div class="col-xs-2 sidebar-left friendly">
 				<ul class="nav nav-stacked nav-pills" id="guitar-sidenav">
 					<li>
 						Guitars
 						<ul class="nav nav-stacked nav-pills" style="margin-left: 10px;">
-							<li id="auditorium-link">
+							<li>
 								<a href="auditorium.html">Grand Auditorium</a>
 							</li>
 							<li>
 								<a href='concertii.html'>Grand Concert</a>
 							</li>
 							<li class="active">
-								<a href='concert.html'>Concert</a>
+								<a href='#'>Concert</a>
 							</li>
 							<li>
 								<a href='parlor.html'>Parlor</a>
@@ -88,74 +89,81 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col-sm-10 friendly guitars">
-					<h2>
-						Concert 
-					</h2>
-					<div class="col-sm-5 friendly">
+			
+			<div class="col-xs-10 friendly">
+				<h2>
+					Concert
+				</h2>
+				<div class="row">
+					<div class="col-xs-5 friendly">
 						<p>
 							This guitar is everything a finger-style guitar should be. Voiced to be responsive and capable of producing a full range of sound when played in varying manors, this model generates deep low and mid-tones with an even balance to its clean and crisp contrasting high tones.
 						</p>
 						Specifications
-						<ul>
-
-							<li>
-								Depth at heel: 3 <sup>11</sup>/<sub>32</sub>"
-							</li>
-							<li>
-								Depth at end block: 3 <sup>27</sup>/<sub>32</sub>"
-							</li>
-							<li>
-								Shoulders: 11 <sup>1</sup>/<sub>16</sub>"
-							</li>
-							<li>
-								Waist : 9 <sup>1</sup>/<sub>8</sub>"
-							</li>
-							<li>
-								Hips: 14 <sup>1</sup>/<sub>4</sub>"
-							</li>
-							<li>
-								Sound hole: 3 <sup>7</sup>/<sub>8</sub>"
-							</li>
-							<li>
-								Body Length: 18 <sup>3</sup>/<sub>4</sub>"
-							</li>
-						</ul>
+						<li>
+							Depth at heel: 3 <sup>11</sup>/<sub>32</sub>"
+						</li>
+						<li>
+							Depth at end block: 3 <sup>27</sup>/<sub>32</sub>"
+						</li>
+						<li>
+							Shoulders: 11 <sup>1</sup>/<sub>16</sub>"
+						</li>
+						<li>
+							Waist : 9 <sup>1</sup>/<sub>8</sub>"
+						</li>
+						<li>
+							Hips: 14 <sup>1</sup>/<sub>4</sub>"
+						</li>
+						<li>
+							Sound hole: 3 <sup>7</sup>/<sub>8</sub>"
+						</li>
+						<li>
+							Body Length: 18 <sup>3</sup>/<sub>4</sub>"
+						</li>
 						<p>
-							All <a href="../standard_options.html">standard options</a> available.
-						</p>	
-						<div class="row" style="margin-top: 20px;">
-							<div class="col-xs-6 col-md-3">
-								<span class="thumbnail" style="cursor: pointer;">
-									<img onclick="$('#concert1-hero').attr('src', this.src);" data-src="holder.js/100%x180" src="../images/instruments/guitars/concert/1front.jpg"/>
-								</span>
-							</div>
-							<div class="col-xs-6 col-md-3">
-								<span class="thumbnail" style="cursor: pointer;">
-									<img  onclick="$('#concert1-hero').attr('src', this.src);" data-src="holder.js/100%x180"src="../images/instruments/guitars/concert/1back.jpg"/>
-								</span>
-							</div>
-						</div> 
+							All <a href="../information.html">standard options</a> available.
+						</p>
+						<div>
+							<hr>
+							<p>
+								<h5>
+									Rosewood Back/Sides, Sitka Spruce Top, Optional Cutaway
+								</h5>	
+								<img class="friendly img-responsive well well-sm thumbnail-special" onclick="$('#auditorium-hero').attr('src', this.src);" data-src="holder.js/100%x180" src="../images/instruments/guitars/concert/1front.jpg"/>
+								<img  class="friendly img-responsive well well-sm thumbnail-special" onclick="$('#auditorium-hero').attr('src', this.src);" data-src="holder.js/100%x180"src="../images/instruments/guitars/concert/1back.jpg"/>
+							</p>
+							<p>
+								<h5>
+									Red Maple Back/Sides, Sitka Spruce Top, Sunburst
+								</h5>
+								<img class="friendly img-responsive well well-sm thumbnail-special" onclick="$('#auditorium-hero').attr('src', this.src);" data-src="holder.js/100%x180" src="../images/instruments/guitars/concert/redmapleconcertfront.jpg"/>
+								<img  class="friendly img-responsive well well-sm thumbnail-special" onclick="$('#auditorium-hero').attr('src', this.src);" data-src="holder.js/100%x180"src="../images/instruments/guitars/concert/redmapleconcertback.jpg">
+							</p>
+						</div>	
 					</div>
+					<div class="col-xs-5 friendly">
+						<img class="img-responsive  well well-sm thumbnail-special" id="auditorium-hero" src="../images/instruments/guitars/concert/1front.jpg" style="max-height: 500px" onclick="openLightbox(this);"/>
 
-					<div class="col-sm-5 friendly">
-						<div class="row">
-							<img class="img-responsive  well well-sm" id="concert1-hero" src="../images/instruments/guitars/concert/1front.jpg"  onclick="openLightbox(this);" style="max-height: 500px"/>
-						</div>
-					</div>
+						<h4>
+							Audio Sample
+						</h4>	
+						<audio src="../audio/rosewoodconcert.mp3" controls>	
+							<embed 
+							src="../audio/rosewoodconcert.mp3"
+							width="180"
+							height="90"
+							loop="false"
+							autostart="false" />
+						</audio>
+						<h5>
+							Instrumental Track, Elijah Bridges
+						</h5>	
+					</div>	
 				</div>
-			</div>
+			</div>	
 		</div>
-		<div class="col-sm-4">
-			<audio src="../audio/rosewoodconcert.mp3" controls>	
-				<embed 
-				src="../audio/rosewoodconcert.mp3"
-				width="180"
-				height="90"
-				loop="false"
-				autostart="false" />
-</audio>
-		</div>		
+		
 	</div>
 	<div id="background-overlay" style="display: none" onclick="closeLightbox()">
 	</div>
@@ -178,14 +186,13 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div>	
 	<footer>
 		<hr class="container">
-		    <div id="bottom">
-		        <a href="https://www.facebook.com/pages/Nils-Guitars-and-Mandolins/139990936088920"><img src="../images/facebook-button.gif"></a>
-		        	<p>Nils Guitars and Mandolins</p>
-		            <p>Copyright 2014. All Rights Reserved. </p>
-			</div>
-    </footer>		
-
+		<div id="bottom">
+			<a href="https://www.facebook.com/pages/Nils-Guitars-and-Mandolins/139990936088920"><img src="../images/facebook-button.gif"></a>
+			<p>Nils Guitars and Mandolins</p>
+			<p>Copyright 2014. All Rights Reserved. </p>
+		</div>
+	</footer>	
 </body>
