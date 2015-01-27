@@ -22,7 +22,7 @@
 				</button>
 			</div>
 			<div class="navbar-collapse collapse navbar-responsive-collapse">
-				<ul class="nav navbar-nav" style="margin-left: 25%;">
+				<ul class="nav navbar-nav" id="mainnav">
 					<li>
 						<a href="index.html">Home</a>
 					</li>
@@ -43,7 +43,7 @@
 						<a class="dropdown-toggle" data-toggle="dropdown">Ordering/Information<span class="caret"></span></a>
 						<ul class="dropdown-menu">
 							<li>
-								<a href="information.html">Information</a>
+								<a href="gallery.html">Gallery</a>
 								<a href="guitarorder.html">Guitar Ordering</a>
 								<a href="mandolinorder.html">Mandolin Ordering</a>
 								<a href="ukuleleorder.html">Ukulele Ordering</a>
@@ -63,7 +63,7 @@
 			Order a Tenor Ukulele!
 		</h3>
 		<div>
-			Ordering a ukulele is easy! At the moment, there is only one ukulele design which I offer, but you have choices when it comes to your wood selection and a couple other things that I'll decide in a minute, but I just needs some text to get started!   Of course, you can always <a href=”contact.html”>contact</a> me directly.    
+			Ordering a ukulele is easy! At the moment, there is only one ukulele design which I offer, but you have choices when it comes to your wood selection and a couple other things that I'll decide in a minute, but I just needs some text to get started!   Of course, you can always <a href="contact.html">contact</a> me directly.    
 		</div>	
 		<hr>
 	</div>
@@ -73,36 +73,55 @@
 				<div class="row">
 					<div class="col-xs-6">
 
-						<h4>Back, Sides and Top</h4>	
+						<h4>Body Woods</h4>	
 						<ul class="orderingoptionslist well">
+							<div class="splits">
+								<h5>
+									Back and Sides
+								</h5>		
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Mahogany
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Sapele
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Black Walnut
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Plain Hawaiian Koa (add $150)
+									</label>
+								</li>
+								<li>
+									<label>
+										<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
+										Curly Hawaiian Koa (add $200)
+									</label>
+								</li>
+							</div>
+							<h5>
+								Top
+							</h5>		
 							<li>
 								<label>
-									<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
-									Mahogany
+									<input type="radio"> Spruce Top (subtract 25% for Koa)
 								</label>
-							</li>
-							<li>
-								<label>
-									<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
-									Sapele
-								</label>
-							</li>
-							<li>
-								<label>
-									<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
-									Black Walnut
-								</label>
-							</li>
-							<li>
-								<label>
-									<input type="radio" name="optionsRadios" id="	optionsRadios1" value="option1" checked="">
-									Hawaiian Koa
-								</label>
-							</li>
-							<li>
-								<label>
-									<input type="checkbox"> Sitka Spruce Top
-								</label>
+								<li>
+									<label>
+										<input type="radio"> Same Top-wood as Back/Sides
+									</label>
+								</li>	
 							</li>
 						</ul>
 
@@ -138,19 +157,19 @@
 							<li>
 								<label>
 									<input type="radio" name="optionsRadios" id="	optionsRadios2" value="option1" checked="">
-									Rosewood
+									Rosewood 
 								</label>
 							</li>
 							<li>
 								<label>
 									<input type="radio" name="optionsRadios" id="	optionsRadios2" value="option1" checked="">
-									Ebony									
+									Ebony (add $25)									
 								</label>
 							</li>
 							<li>
 								<label>
 									<input type="radio" name="optionsRadios" id="	optionsRadios2" value="option1" checked="">
-									Black Walnut Fingerboard and Maple Bridge
+									Black Walnut Fingerboard and Maple Bridge (subtract 15$) <!--Romove Rosewood and Koa binding -->
 								</label>
 							</li>
 						</ul>
@@ -167,7 +186,7 @@
 							<li>
 								<label>
 									<input type="radio" name="optionsRadios" id="	optionsRadios2" value="option1" checked="">
-									Abalone Shell
+									Abalone Shell (add $200) <!--Romove fine line Rosette option, auto select Abalone Shell and add cost-->
 								</label>
 							</li>
 						</ul>
@@ -191,7 +210,31 @@
 							</li>
 						</ul>
 					</div>
+					<div class="col-xs-6">
+						<h4>Binding</h4>
+						<ul class="orderingoptionslist well">
+							<li>
+								<label>
+									<input type="radio" name="optionsRadios" id="	optionsRadios2" value="option1" checked="">
+									Curly Maple
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="optionsRadios" id="	optionsRadios2" value="option1" checked="">
+									Rosewood
+								</label>
+							</li>
+							<li>
+								<label>
+									<input type="radio" name="optionsRadios" id="	optionsRadios2" value="option1" checked="">
+									Curly Hawaiian Koa (add $30)
+								</label>
+							</li>
+						</ul>
+					</div>
 				</div>
+
 			</div>		
 			<div class="col-xs-4" id="buildsummary">
 				<div class="row">	
