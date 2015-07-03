@@ -30,6 +30,13 @@ var parlor_images = [
 	"guitars/parlor/lightbox/2front.jpg",
 	"guitars/parlor/lightbox/2back.jpg"
 ]
+var available_ukulele_images = [
+	"../../available/images/mahoguke/one.jpg",
+	"../../available/images/mahoguke/two.jpg",
+	"../../available/images/mahoguke/three.jpg",
+	"../../available/images/mahoguke/four.jpg",
+	"../../available/images/mahoguke/five.jpg"
+]
 
 
 var switchTo = function(objectId)
@@ -90,12 +97,16 @@ var lightboxChange = function(instrument, step)
 		case "parlor":
 			images = parlor_images;
 			break;
+		case "available_ukulele":
+			images = available_ukulele_images;
+			break;	
 	}
 	var curIndex = 0;
 	var sourceStr = $('#modal-image')[0].src;
+	var currentImage = sourceStr.split('/').pop();
 	for(var i = 0; i < images.length; i++)
 	{
-		if(sourceStr.indexOf(images[i]) > -1)
+		if(currentImage == images[i].split('/').pop())
 		{
 			curIndex = i;
 			break;
