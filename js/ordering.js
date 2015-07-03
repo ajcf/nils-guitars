@@ -59,10 +59,24 @@ $(document).ready(function(){
 	$('input[name="bindingRadios"]').change(function(e) {
 	    updateBuildSummary(this, "bindingMaterial");
 	});
+	//electronics
+	$('input[name="electronicsRadios"]').change(function(e) {
+	    updateBuildSummary(this, "electronics");
+	});
+
+	selectDefaultOptions();
 });
 
 var updateBuildSummary = function(radioList, fieldIDToUpdate)
 {
 	var radioValue = $(radioList).val();
 	$("#" + fieldIDToUpdate)[0].textContent = radioValue;
+}
+
+var selectDefaultOptions = function()
+{
+	$('.defaultUkeOption').each(function()
+	{
+		$(this).click();
+	});
 }
