@@ -4,6 +4,7 @@
 	<link type="text/css" rel="stylesheet" href="../css/style.css"/>
 	<script language="javscript" src="../js/jquery-2.1.1.min.js" type="text/javascript"></script>
 	<script language="javscript" src="../js/bootstrap.min.js" type="text/javascript"></script>
+	<script language="javscript" src="../js/script.js" type="text/javascript"></script>
 	<title>Nils Guitars and Mandolins - For Sale</title>
 </head>
 <body>
@@ -59,36 +60,100 @@
 		</div>
 	</div>
 	<div class="container">
-		<h2 class="titles">
-			Available Instruments
-		</h2>
-		<div class="row">
-			<div class="col-xs-4">
-				<img class="img-responsive img-thumbnail" src="images/mahoguke/one.jpg">
+		<h1 class="titles">
+			Red Maple A-Style Mandolin
+		</h1>
+		<div class ="row">
+			<div class="col-sm-6">
+				<ul>
+					<li>
+						Red Maple Back and Sides
+					</li>
+					<li>
+						Sitka Spruce Top
+					</li>
+					<li>
+						2 Piece Maple Neck
+					</li>
+					<li>
+						Rosewood Binding
+					</li>
+					<li>
+						Maple Bridge with Rosewood Fingerboard
+					</li>
+					<li>
+						Grover Tuners
+					</li>
+					<li>
+						Bone Nut
+					</li>
+					<li>
+						Satin Tung Oil Finish
+					</li>
+				</ul>	
 			</div>
-			<div class="col-xs-8">
-				<h3>
-					<a href="Honduran Mahogany Tenor Ukulele
-				</h3>
+			<div class="col-sm-6">
 				<p>
-					Tenor Ukulele with Honduran Mahogany top, back and Sides
-				</p>	
+					$845 plus shipping, includes gigbag
+				</p>
+				<p>
+				Please contact me to purchase. 
+				</p>
+				<hr>
+				<p>
+					Note: This mandolin is discounted for having two cosmetic blemishes. The pieces of wood used for this neck where originally glued up to be for a guitar. The leftover piece that I had afterwards was large enough for this mandolin, so I used it forgetting that there was this knot hidden on the inside. There are also some small wormholes that I somehow managed to overlook on the soundboard; see the last image. Both of these are cosmetic and the instrument comes with a standard warranty. 
+				</p>
+
+
 			</div>
 		</div>	
 		<div class="row">
-			<div class="col-xs-4">
-				<img class="img-responsive img-thumbnail" src="images/maplemandolin1/one.jpg">
+			<div class="col-sm-4">
+				<img class="img-responsive well cursor" src="images/maplemandolin1/one.jpg" onclick="openLightbox(this);">
 			</div>
-			<div class="col-xs-8">
-				<h3>
-					Red Maple A-Style Mandolin
-				</h3>
-				<p>
-					A-Style Mandolin with Sitka Spruce top, Red Maple back and sides
-				</p>	
+			<div class="col-sm-4">
+				<img class="img-responsive well cursor" src="images/maplemandolin1/two.jpg" onclick="openLightbox(this);">
 			</div>
+			<div class="col-sm-4">
+				<img class="img-responsive well cursor" src="images/maplemandolin1/three.jpg" onclick="openLightbox(this);">
+			</div>	
+		</div>
+		<div class="row top-margin">
+
+			<div class="col-sm-4">
+				<img class="img-responsive well cursor" src="images/maplemandolin1/four.jpg" onclick="openLightbox(this);">
+			</div>
+			<div class="col-sm-4">
+				<img class="img-responsive well cursor" src="images/maplemandolin1/five.jpg" onclick="openLightbox(this);">
+			</div>
+			<div class="col-sm-4">
+				<img class="img-responsive well cursor" src="images/maplemandolin1/six.jpg" onclick="openLightbox(this);">
+			</div>
+		</div>
 
 	</div>
+	<div id="background-overlay" style="display: none" onclick="closeLightbox()">
+	</div>
+	<div class="modal fade" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" id="lightbox">
+		<div class="modal-dialog lightbox-top-margin">
+			<div class="modal-content friendly">
+				<div class="modal-header" style="text-align: right;">
+					<span class="glyphicon glyphicon-remove" onclick="closeLightbox()" style="cursor: pointer"></span>
+				</div>
+				<div class="modal-body friendly;">
+					<div>
+						<a class="left carousel-control" href="#myCarousel" role="button"  onclick="lightboxChange('available_mandolin', -1);">
+							<span class="glyphicon glyphicon-chevron-left"></span>
+						</a>
+						<img id="modal-image" class="img-responsive" src=""/>
+						<a class="right carousel-control" href="#myCarousel" role="button" onclick="lightboxChange('available_mandolin', 1);">
+							<span class="glyphicon glyphicon-chevron-right"></span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
 	<footer>
 		<hr class="container">
 		<div id="bottom">

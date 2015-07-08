@@ -1,14 +1,20 @@
 var ukulele_images = [
+	"ukulele/lightbox/honduranfront.jpg",
+	"ukulele/lightbox/honduranback.jpg",
 	"ukulele/lightbox/africanmahogfront.jpg",
 	"ukulele/lightbox/africanmahogback.jpg",
 	"ukulele/lightbox/blackwalnutsprucefront.jpg",
 	"ukulele/lightbox/blackwalnutspruceback.jpg",
 	"ukulele/lightbox/sapelefront.jpg",
 	"ukulele/lightbox/sapeleback.jpg"
+	
 ]
 var mandolin_images = [
+	"mandolins/lightbox/redmaplefront.jpg",
+	"mandolins/lightbox/redmapleback.jpg",
 	"mandolins/lightbox/rosewoodmandofront.jpg",
 	"mandolins/lightbox/rosewoodmandoback.jpg"
+	
 ]
 var auditorium_images = [
 	"guitars/auditorium/lightbox/mahogfront.jpg",
@@ -35,9 +41,18 @@ var available_ukulele_images = [
 	"../../available/images/mahoguke/two.jpg",
 	"../../available/images/mahoguke/three.jpg",
 	"../../available/images/mahoguke/four.jpg",
-	"../../available/images/mahoguke/five.jpg"
+	"../../available/images/mahoguke/five.jpg",
+	"../../available/images/mahoguke/six.jpg"
 ]
 
+var available_mando_images = [
+	"../../available/images/maplemandolin1/one.jpg",
+	"../../available/images/maplemandolin1/two.jpg",
+	"../../available/images/maplemandolin1/three.jpg",
+	"../../available/images/maplemandolin1/four.jpg",
+	"../../available/images/maplemandolin1/five.jpg",
+	"../../available/images/maplemandolin1/six.jpg"
+]
 
 var switchTo = function(objectId)
 {
@@ -99,6 +114,9 @@ var lightboxChange = function(instrument, step)
 			break;
 		case "available_ukulele":
 			images = available_ukulele_images;
+			break;	
+		case "available_mandolin":
+			images = available_mando_images;
 			break;	
 	}
 	var curIndex = 0;
