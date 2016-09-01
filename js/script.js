@@ -1,58 +1,48 @@
 var ukulele_images = [
-	"ukulele/lightbox/honduranfront.jpg",
-	"ukulele/lightbox/honduranback.jpg",
 	"ukulele/lightbox/africanmahogfront.jpg",
 	"ukulele/lightbox/africanmahogback.jpg",
 	"ukulele/lightbox/blackwalnutsprucefront.jpg",
-	"ukulele/lightbox/blackwalnutspruceback.jpg",
-	"ukulele/lightbox/sapelefront.jpg",
-	"ukulele/lightbox/sapeleback.jpg"
+	"ukulele/lightbox/blackwalnutspruceback.jpg"
+	
 	
 ]
 var mandolin_images = [
-	"mandolins/lightbox/redmaplefront.jpg",
-	"mandolins/lightbox/redmapleback.jpg",
+	"mandolins/lightbox/european_front.jpg",
+	"mandolins/lightbox/european_back.jpg",
 	"mandolins/lightbox/rosewoodmandofront.jpg",
 	"mandolins/lightbox/rosewoodmandoback.jpg"
 	
 ]
 var auditorium_images = [
+	"guitars/auditorium/lightbox/rosewoodfront.jpg",
+	"guitars/auditorium/lightbox/rosewoodback.jpg",
 	"guitars/auditorium/lightbox/mahogfront.jpg",
 	"guitars/auditorium/lightbox/mahogback.jpg"
+
 ]
-var concertii_images = [
-	"guitars/concert/lightbox/2front.jpg",
-	"guitars/concert/lightbox/2back.jpg"
+var grandconcert_images = [
+	"guitars/grand_concert/lightbox/grand_concert_front2.jpg",
+	"guitars/grand_concert/lightbox/grand_concert_back2.jpg",
+	"guitars/grand_concert/lightbox/grand_concert_front.jpg",
+	"guitars/grand_concert/lightbox/grand_concert_back.jpg"
 ]
 var concert_images = [
-	"guitars/concert/lightbox/1front.jpg",
-	"guitars/concert/lightbox/1back.jpg",
-	"guitars/concert/lightbox/redmapleconcertfront.jpg",
-	"guitars/concert/lightbox/redmapleconcertback.jpg"
+	"guitars/concert/lightbox/mahog_front.jpg",
+	"guitars/concert/lightbox/mahog_back.jpg",
+	"guitars/concert/lightbox/maple_burst_front.jpg",
+	"guitars/concert/lightbox/maple_burst_back.jpg"
 ]
 var parlor_images = [
-	"guitars/parlor/lightbox/1front.jpg",
-	"guitars/parlor/lightbox/1back.jpg",
+	"guitars/parlor/lightbox/red_maple_front.jpg",
+	"guitars/parlor/lightbox/red_maple_back.jpg",
 	"guitars/parlor/lightbox/2front.jpg",
 	"guitars/parlor/lightbox/2back.jpg"
 ]
-var available_ukulele_images = [
-	"../../available/images/mahoguke/one.jpg",
-	"../../available/images/mahoguke/two.jpg",
-	"../../available/images/mahoguke/three.jpg",
-	"../../available/images/mahoguke/four.jpg",
-	"../../available/images/mahoguke/five.jpg",
-	"../../available/images/mahoguke/six.jpg"
-]
 
-var available_mando_images = [
-	"../../available/images/maplemandolin1/one.jpg",
-	"../../available/images/maplemandolin1/two.jpg",
-	"../../available/images/maplemandolin1/three.jpg",
-	"../../available/images/maplemandolin1/four.jpg",
-	"../../available/images/maplemandolin1/five.jpg",
-	"../../available/images/maplemandolin1/six.jpg"
-]
+
+
+
+
 
 var switchTo = function(objectId)
 {
@@ -90,7 +80,7 @@ var switchLightbox = function(imageId)
 
 var lightboxChange = function(instrument, step)
 {
-	var srcStart = "../images/instruments/";
+	var srcStart = "../img/instruments/";
 	var images;
 	switch(instrument)
 	{
@@ -106,18 +96,13 @@ var lightboxChange = function(instrument, step)
 		case "concert":
 			images = concert_images;
 			break;
-		case "concertii":
-			images = concertii_images;
+		case "grandconcert":
+			images = grandconcert_images;
 			break;
 		case "parlor":
 			images = parlor_images;
 			break;
-		case "available_ukulele":
-			images = available_ukulele_images;
-			break;	
-		case "available_mandolin":
-			images = available_mando_images;
-			break;	
+						
 	}
 	var curIndex = 0;
 	var sourceStr = $('#modal-image')[0].src;
